@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gamer Survey Form</title>
+</head>
+<body>
+    <div class="container">
+       <!-- HEADER--> 
+      <header class="header">
+        <h1 id="title"> Gamer Survey Form</h1>
+        <p id="description"> This is a form that I created for the gamer community</p>
+      </header>
+      <!--END OF HEADER--> 
+      <form id="survey-form">
+        <!-- START OF INPUTS--> 
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Name" required />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="name">E-mail</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input type="number" min="10" max="120" name="age" id="number" class="form-control" placeholder="Age" required />
+        </div>
+        <!-- END OF INPUTS-->  
+        <!-- START OF DROPDOWN MENU-->
+        <div class="form-group">
+          <p>What genre of games you enjoy the most?</p>
+          <select id="dropdown" name="game-type" required>
+            <option disabled selected value>Choose your own category</option>
+            <option value="FPS">FPS</option>
+            <option value="MOBA">MOBA</option>
+            <option value="MMORPG">MMORPG</option>
+            <option value="Indie">Indie</option>
+            <option value="Estrategia">Estrategy</option>
+            <option value="Simulation">Simulation</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!-- END OF DROPDOWN MENU-->
+        <!-- START OF INPUT RADIO-->    
+        <div class="form-group">
+          <p>How many hours do you dedicate to gaming?</p>
+          <label>
+            <input name="user-gaming-hours" value="nada" type="radio" class="input-radio" checked />Nothing
+          </label>
+          <label>
+            <input name="user-gaming-hours" value="0hs-4hs" type="radio" class="input-radio" />0-2hs
+          </label>
+          <label>
+            <input name="user-gaming-hours" value="4hs-8hs" type="radio" class="input-radio" />2-4hs
+          </label>
+          <label>
+            <input name="user-gaming-hours" value="8hs-12hs" type="radio" class="input-radio" />4-6hs
+          </label>
+          <label>
+            <input name="user-gaming-hours" value="+12hs" type="radio" class="input-radio" />+6hs
+          </label>
+        </div>
+        <!-- END OF INPUT RADIO-->
+        
+        <!-- START OF GAMER GRID - CHECKBOX -->
+        <div class="form-group">
+          <p>What games do you identify with the most?</p>
+          <div class="gamer-grid"> 
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://b.thumbs.redditmedia.com/n7p8hW7nEzaUXkxgOpUDycnJpqLqHsY96GUjgs3sehE.png" alt="Valorant">
+              <label id=game-name>
+                <input name="prefer-game" value="Valorant" type="checkbox" class="input-checkbox" />Valorant</label>
+            </div>        
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://i.pinimg.com/originals/16/cb/ce/16cbce3765c1d1a2ad10980198cc9aa0.jpg" alt="GTA V">
+              <label id=game-name>
+                <input name="prefer-game" value="GTA V" type="checkbox" class="input-checkbox" />GTA V</label>
+            </div>
+
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiVgKBlS8HrKts58lLUbS-p7s_IfwDPL0kcRLAUcODL47I98rEv_B-U0d1RJ4lDZ1J3Gs&usqp=CAU" alt="Overwatch">
+              <label id=game-name>
+                <input name="prefer-game" value="Overwatch" type="checkbox" class="input-checkbox" />Overwatch</label>
+            </div>
+
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://yt3.ggpht.com/ytc/AAUvwniymVIx9gEuncQv9k1-VS1evNl201WgDY44NTsH9A=s900-c-k-c0x00ffffff-no-rj" alt="League of Legends">
+              <label id=game-name>
+                <input name="prefer-game" value="League of Legends" type="checkbox" class="input-checkbox" />League of Legends</label>
+            </div>
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://seeklogo.com/images/C/csgo-logo-CAA0A4D48A-seeklogo.com.png" alt="CS:GO">
+              <label id=game-name>
+                <input name="prefer-game" value="CS:GO" type="checkbox" class="input-checkbox" />CS:GO</label>
+            </div>
+
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://imag.malavida.com/mvimgbig/download-fs/call-of-duty-warzone-26418-0.jpg" alt="COD: Warzone">
+              <label id=game-name>
+                <input name="prefer-game" value="COD: Warzone" type="checkbox" class="input-checkbox" />COD: Warzone</label>
+            </div>
+
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://www.dafont.com/forum/attach/orig/8/5/852715.png" alt="Rust">
+              <label id=game-name>
+                <input name="prefer-game" value="Rust" type="checkbox" class="input-checkbox" />Rust</label>
+            </div>
+            
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://i.pinimg.com/originals/01/48/f2/0148f2e9376abe7b7479e7527e53e4b6.jpg" alt="Fortnite">
+              <label id=game-name>
+                <input name="prefer-game" value="Fortnite" type="checkbox" class="input-checkbox" />Fortnite</label>
+            </div>
+            
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://geekzilla.tech/home/wp-content/uploads/2020/11/unnamed.png" alt="Minecraft">
+              <label id=game-name>
+                <input name="prefer-game" value="Minecraft" type="checkbox" class="input-checkbox" />Minecraft</label>
+            </div>
+            
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://logodownload.org/wp-content/uploads/2019/02/apex-legends-logo-1.png" alt="Apex Legends">
+              <label id=game-name>
+                <input name="prefer-game" value="Apex Legends" type="checkbox" class="input-checkbox" />Apex Legends</label>
+            </div>
+            
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://actionagogo.com/wp-content/uploads/2016/06/856773_401498996612077_1604691223_o.jpg" alt="Destiny 2">
+              <label id=game-name>
+                <input name="prefer-game" value="Destiny 2" type="checkbox" class="input-checkbox" />Destiny 2</label>
+            </div>
+            
+            <div class="gamer-card" >
+              <img  class="gamer-card" src="https://i.pinimg.com/736x/bb/55/3d/bb553d7a57b0142167c6aef4c33c7f30.jpg" alt="Genshin Impact">
+              <label id=game-name>
+                <input name="prefer-game" value="Genshin Impact" type="checkbox" class="input-checkbox" />Genshin Impact</label>
+            </div>
+          </div>
+        </div>
+        <!-- END OF GAMER GRID - CHECKBOX-->
+        <!--TEXT AREA INPUT--> 
+        <div class="form-group">
+          <p>Drop me a comment down below!</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Tell me a little bit of your history with gaming.."></textarea>
+        </div>
+        <!--START OF SUBMIT BUTTON--> 
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+        <!-- END OF SUBMIT BUTTON--> 
+      </form>
+    </div>
+</body>
+</html>
